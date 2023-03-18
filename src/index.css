@@ -26,7 +26,7 @@
 h1 {
   font-size: 3.2em;
   line-height: 0.1;
-  font-family: "Tourney", cursive;
+  font-family: "Tourney";
 }
 .plug {
   background-color: white;
@@ -83,7 +83,6 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-
 /* ///////////////Contact Create Page ////////////////// */
 .contact-create {
   margin: 20px auto;
@@ -101,7 +100,7 @@ button:focus-visible {
 .plus:hover {
   transform: scale(1.1);
 }
-.flex-contact-create{
+.flex-contact-create {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -110,8 +109,7 @@ button:focus-visible {
   text-align: center;
 }
 
-
-form{
+form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -126,32 +124,31 @@ input[type="text"] {
   padding: 10px;
   text-transform: capitalize;
 }
-input[type="text"]:hover{
+input[type="text"]:hover {
   border-color: #747bff;
-  
 }
-input::placeholder{
-  font-family: 'inter';
+input::placeholder {
+  font-family: "inter";
 }
 
-.addd{
+.addd {
   position: relative;
   top: 10vw;
   left: 35%;
 }
 
-.id-flex{
+.id-flex {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.lex{
+.lex {
   display: flex;
   flex-direction: column;
   gap: -10px;
 }
 
-.main-name{
+.main-name {
   margin: 0;
 }
 @media (prefers-color-scheme: light) {
@@ -175,5 +172,6 @@ input::placeholder{
     color: #573091;
   }
   input[type="text"] {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.575);}
+    border-bottom: 1px solid rgba(255, 255, 255, 0.575);
+  }
 }
