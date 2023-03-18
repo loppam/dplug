@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Tourney:ital,wght@1,500&display=swap");
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  box-shadow: rgba(83, 91, 242, 0.23) 0px 30px 30px -20px;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 0.1;
+  font-family: "Tourney", cursive;
+}
+.plug {
+  background-color: white;
+  padding: 10px;
+  border-radius: 50px;
+}
+.contact-list {
+  margin: 0 auto;
+  width: 80vw;
+}
+.contact-list h2 {
+  font-family: "Inter";
+}
+.contact-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+  text-transform: capitalize;
+}
+.contact-preview a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #c090da;
+}
+.contact-preview:hover {
+  box-shadow: 5px 6px 7px rgba(255, 255, 255, 0.1);
+}
+.contact-preview a:hover {
+  color: #573091;
+}
+
+.contact-preview h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+/* ///////////////Contact Create Page ////////////////// */
+.contact-create {
+  margin: 20px auto;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.add {
+  position: relative;
+  top: 10vw;
+  left: 80vw;
+}
+
+.plus:hover {
+  transform: scale(1.1);
+}
+.flex-contact-create{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+input[type="text"] {
+  border-bottom: 1px solid #747bffc6;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  padding: 10px;
+  text-transform: capitalize;
+}
+input[type="text"]:hover{
+  border-color: #747bff;
+  
+}
+input::placeholder{
+  font-family: 'inter';
+}
+
+.addd{
+  position: relative;
+  top: 10vw;
+  left: 35%;
+}
+
+.id-flex{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.lex{
+  display: flex;
+  flex-direction: column;
+  gap: -10px;
+}
+
+.main-name{
+  margin: 0;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  .contact-preview {
+    border-bottom: 1px solid #070707;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+  .contact-preview a:hover {
+    color: #c090da;
+  }
+  .contact-preview a {
+    color: #573091;
+  }
+  input[type="text"] {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.575);}
+}
