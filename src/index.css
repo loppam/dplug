@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Tourney:ital,wght@1,500&display=swap");
 :root {
-  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -23,7 +23,7 @@
   box-shadow: rgba(83, 91, 242, 0.23) 0px 30px 30px -20px;
 }
 
-h1 {
+nav.navbar h1 {
   font-size: 3.2em;
   line-height: 0.1;
   font-family: "Tourney";
