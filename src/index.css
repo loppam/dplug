@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Tourney:ital,wght@1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Autour+One&family=Inter:wght@300&family=Tourney:ital,wght@1,500&display=swap");
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -26,7 +26,8 @@
 nav.navbar h1 {
   font-size: 3.2em;
   line-height: 0.1;
-  font-family: "Tourney";
+  /* font-family: "Tourney"; */
+  font-family: "Autour One";
 }
 .plug {
   background-color: white;
@@ -152,14 +153,13 @@ input::placeholder {
   margin: 0;
 }
 
-
-article{
+article {
   margin: 50px auto;
   width: 80vw;
   display: flex;
   flex-direction: column;
 }
-.flex-contact-details{
+.flex-contact-details {
   flex-wrap: wrap;
   align-items: center;
   gap: 20px;
@@ -167,16 +167,16 @@ article{
   justify-content: center;
   text-align: center;
 }
-h2.mai-name{
+h2.mai-name {
   font-size: 50px;
   margin: 0;
 }
-.flexed{
+.flexed {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.flexed a{
+.flexed a {
   margin: 0;
   text-decoration: none;
   font-size: 20px;
@@ -205,7 +205,8 @@ h2.mai-name{
   .contact-preview a:hover {
     color: #c090da;
   }
-  .contact-preview a,.flexed a {
+  .contact-preview a,
+  .flexed a {
     color: #573091;
   }
 
