@@ -28,29 +28,35 @@ const contactDetails = () => {
         if (contactdetail.id === `${id}`) {
           return (
             <article key={contactdetail.id}>
-              <Avatar
-                alt={"image"}
-                className="avatar"
-                src={contactdetail.image}
-                variant="rounded"
-                sx={{ width: 200, height: 200 }}
-              />
-              <h2>{contactdetail.fName}</h2>
-              <h2>{contactdetail.sName}</h2>
-              <p>{contactdetail.services}</p>
-              <Link
-                target="_blank"
-                to={"https://www.instagram.com/" + contactdetail.instagram}
-              >
-                <BsInstagram /> {contactdetail.instagram}
-              </Link>
-              <br />
-              <Link
-                target="_blank"
-                to={"https://wa.me/+" + contactdetail.whatsapp}
-              >
-                <BsWhatsapp /> {contactdetail.whatsapp}
-              </Link>
+              <div className="flex-contact-details">
+                <Avatar
+                  alt={"image"}
+                  className="avatar"
+                  src={contactdetail.image}
+                  variant="rounded"
+                  sx={{ width: 200, height: 200 }}
+                />
+                <div className="flexed">
+                  <h2 className="mai-name">
+                    {contactdetail.fName} {contactdetail.sName}
+                  </h2>
+
+                  <p>{contactdetail.services}</p>
+                  <Link
+                    target="_blank"
+                    to={"https://www.instagram.com/" + contactdetail.instagram}
+                  >
+                    <BsInstagram /> {contactdetail.instagram}
+                  </Link>
+
+                  <Link
+                    target="_blank"
+                    to={"https://wa.me/+" + contactdetail.whatsapp}
+                  >
+                    <BsWhatsapp /> {contactdetail.whatsapp}
+                  </Link>
+                </div>
+              </div>
             </article>
           );
         }

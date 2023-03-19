@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Tourney:ital,wght@1,500&display=swap');
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -151,6 +151,43 @@ input::placeholder {
 .main-name {
   margin: 0;
 }
+
+
+article{
+  margin: 50px auto;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+}
+.flex-contact-details{
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+h2.mai-name{
+  font-size: 50px;
+  margin: 0;
+}
+.flexed{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.flexed a{
+  margin: 0;
+  text-decoration: none;
+  font-size: 20px;
+  color: #c090da;
+}
+.flexed p {
+  text-transform: capitalize;
+  font-size: 30px;
+  margin: 0;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -168,9 +205,10 @@ input::placeholder {
   .contact-preview a:hover {
     color: #c090da;
   }
-  .contact-preview a {
+  .contact-preview a,.flexed a {
     color: #573091;
   }
+
   input[type="text"] {
     border-bottom: 1px solid rgba(255, 255, 255, 0.575);
   }

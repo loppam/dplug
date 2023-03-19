@@ -3,14 +3,14 @@ import { Avatar } from "@mui/material";
 import { storage } from "./firebase";
 import { db } from "./firebase";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
-import { collection, getDocs, addDoc, arrayUnion } from "firebase/firestore";
+import { collection, getDocs, addDoc } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 import { AiOutlineHome } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 const contactCreate = () => {
   const [image, setImage] = useState(null);
-  const [url, setUrl] = useState(null);
+  const [url, setUrl] = useState([]);
   const handleImageChange = (e) => {
     if (e.target.files[0]) {
       setImage(e.target.files[0]);
@@ -44,13 +44,14 @@ const contactCreate = () => {
       services: newservices,
       instagram: newinstagram,
       whatsapp: newwhatsapp,
-      image: url
+      image: url,
     });
     navigate("/");
   };
 
   const handleSubmit = () => {
-    const imageRef = ref(storage, "image");
+    // const imageRef = ref(storage, `${newsName}/${addContact.id}/${newfName}`);
+    const imageRef = ref(storage, `/profilepic/${image.name}`);
     uploadBytes(imageRef, image)
       .then(() => {
         getDownloadURL(imageRef)
@@ -79,7 +80,7 @@ const contactCreate = () => {
           <input
             accept="image/*"
             type="file"
-
+            required
             onChange={handleImageChange}
           />
           <button onClick={handleSubmit}>Upload</button>
@@ -127,14 +128,14 @@ const contactCreate = () => {
         <button>Add Blog</button>
       </form>
       <Link to={"/"} className="addd">
-        <AiOutlineHome className="plus"
+        <AiOutlineHome
+          className="plus"
           style={{
             backgroundColor: "#747bff",
             padding: "10px",
             borderRadius: "5vw",
             fontSize: "6vw",
             color: "#573091",
-
           }}
         />
       </Link>
