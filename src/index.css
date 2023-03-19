@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Autour+One&family=Inter:wght@300&family=Tourney:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Inter:wght@300&display=swap");
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -26,7 +26,8 @@
 nav.navbar h1 {
   font-size: 3.2em;
   line-height: 0.1;
-  font-family: "Tourney";
+  /* font-family: "Tourney"; */
+  font-family: "Bungee Shade";
   /* font-family: "Autour One"; */
 }
 .plug {
